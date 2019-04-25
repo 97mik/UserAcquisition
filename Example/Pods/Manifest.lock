@@ -1,0 +1,16 @@
+PODS:
+  - UserAcquisition (0.1.0)
+
+DEPENDENCIES:
+  - UserAcquisition (from `../`)
+
+EXTERNAL SOURCES:
+  UserAcquisition:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UserAcquisition: 6209b658ee3254f5f79f103e4ee168eb4dfab020
+
+PODFILE CHECKSUM: 221a951ac5b72830768c8b4d96d4a9cc616f2880
+
+COCOAPODS: 1.6.0

@@ -1,0 +1,6 @@
+framework module UserAcquisition {
+  umbrella header "UserAcquisition-umbrella.h"
+
+  export *
+  module * { export * }
+}

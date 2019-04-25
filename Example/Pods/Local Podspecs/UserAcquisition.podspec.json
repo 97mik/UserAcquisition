@@ -1,0 +1,22 @@
+{
+  "name": "UserAcquisition",
+  "version": "0.1.0",
+  "summary": "A short description of UserAcquisition.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Mikhail Verenich/UserAcquisition",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mikhail Verenich": "97mik@mail.ru"
+  },
+  "source": {
+    "git": "https://github.com/Mikhail Verenich/UserAcquisition.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UserAcquisition/Classes/**/*"
+}

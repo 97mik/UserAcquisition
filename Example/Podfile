@@ -1,0 +1,6 @@
+use_frameworks!
+target 'UserAcquisition_Tests' do
+  pod 'UserAcquisition', :path => '../'
+  
+  
+end
