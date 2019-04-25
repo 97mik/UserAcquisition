@@ -1,4 +1,4 @@
-framework module Pods_UserAcquisition_Tests {
+module Pods_UserAcquisition_Tests {
   umbrella header "Pods-UserAcquisition_Tests-umbrella.h"
 
   export *

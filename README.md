@@ -17,7 +17,50 @@ UserAcquisition is available through [CocoaPods](https://cocoapods.org). To inst
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'UserAcquisition'
+pod 'UserAcquisition', :git => "https://github.com/97mik/UserAcquisition.git"
+```
+
+## Usage
+In didFinishLaunchingWithOptions method:
+```swift
+UserAcquisition.shared.configure(withAPIKey: "APIKey", appUserName: "appUserName")
+```
+After successful purchase:
+```swift
+UserAcquisition.shared.logPurchase(of: product)
+```
+Add AppsFlyer:
+```swift
+import AppsFlyerLib
+
+extension AppDelegate: AppsFlyerTrackerDelegate {
+    func onConversionDataReceived(_ installData: [AnyHashable : Any]!) {
+        if let data = installData as? [String: Any] {
+            UserAcquisition.shared.conversionInfo.setAppsFlyerData(data)
+            UserAcquisition.shared.conversionInfo.appsFlyerId = AppsFlyerTracker.shared().getAppsFlyerUID() ?? ""
+        }
+    }
+}
+```
+Add Adjust:
+```swift
+import Adjust
+
+extension AppDelegate: AdjustDelegate {
+    func adjustAttributionChanged(_ attribution: ADJAttribution?) {
+        if let data = attribution?.dictionary() {
+            UserAcquisition.shared.conversionInfo.setAdjustData(data)
+        }
+    }
+}
+```
+Add YandexMetrica:
+```swift
+import YandexMobileMetrica
+
+YMMYandexMetrica.requestAppMetricaDeviceID(withCompletionQueue: .main) { [unowned self] id, error in
+    UserAcquisition.shared.conversionInfo.appmetricaId = id ?? ""
+}
 ```
 
 ## Author

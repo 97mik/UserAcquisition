@@ -1,16 +1,38 @@
 PODS:
-  - UserAcquisition (0.1.0)
+  - AppsFlyerFramework (4.9.0)
+  - SwiftyStoreKit (0.14.2)
+  - UserAcquisition (0.1.0):
+    - AppsFlyerFramework
+    - SwiftyStoreKit
+    - YandexMobileMetrica
+  - YandexMobileMetrica (3.6.0):
+    - YandexMobileMetrica/Static (= 3.6.0)
+  - YandexMobileMetrica/Static (3.6.0):
+    - YandexMobileMetrica/Static/Core (= 3.6.0)
+    - YandexMobileMetrica/Static/Crashes (= 3.6.0)
+  - YandexMobileMetrica/Static/Core (3.6.0)
+  - YandexMobileMetrica/Static/Crashes (3.6.0):
+    - YandexMobileMetrica/Static/Core
 
 DEPENDENCIES:
   - UserAcquisition (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AppsFlyerFramework
+    - SwiftyStoreKit
+    - YandexMobileMetrica
 
 EXTERNAL SOURCES:
   UserAcquisition:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UserAcquisition: 6209b658ee3254f5f79f103e4ee168eb4dfab020
+  AppsFlyerFramework: f57e5d590ad3124d3e594a76032a181bc91ec6cd
+  SwiftyStoreKit: cc399645796b094022fb650c148a0aed25995873
+  UserAcquisition: de5cf2dc81d097683d4fd618db4099960e005206
+  YandexMobileMetrica: 11eee6732831a44aea2d81e3ae8626b5b0e129c5
 
-PODFILE CHECKSUM: 221a951ac5b72830768c8b4d96d4a9cc616f2880
+PODFILE CHECKSUM: c29ee2fb4ac181f21cb830ba245daf9e931cfb8b
 
 COCOAPODS: 1.6.0

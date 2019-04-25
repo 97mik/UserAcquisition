@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A92EB5FBF3E3D9682EAD674 /* Pods_UserAcquisition_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4E00AF86EC1D328D9F7132 /* Pods_UserAcquisition_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		AD537148C68DD36B6A64CCF2 /* libPods-UserAcquisition_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CE9A65360CF91073EAD75A /* libPods-UserAcquisition_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,8 +19,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7F2A1C432E89EA15EDC6044D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		80CE9A65360CF91073EAD75A /* libPods-UserAcquisition_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UserAcquisition_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9886263DE5E5D6ADE8E9788 /* UserAcquisition.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UserAcquisition.podspec; path = ../UserAcquisition.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		CB4E00AF86EC1D328D9F7132 /* Pods_UserAcquisition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserAcquisition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A92EB5FBF3E3D9682EAD674 /* Pods_UserAcquisition_Tests.framework in Frameworks */,
+				AD537148C68DD36B6A64CCF2 /* libPods-UserAcquisition_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +47,7 @@
 		4883131EDBE591CBEE226331 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB4E00AF86EC1D328D9F7132 /* Pods_UserAcquisition_Tests.framework */,
+				80CE9A65360CF91073EAD75A /* libPods-UserAcquisition_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,7 +109,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				71FC4160FEB189F8FDA7C045 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,28 +166,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		71FC4160FEB189F8FDA7C045 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UserAcquisition_Tests/Pods-UserAcquisition_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/UserAcquisition/UserAcquisition.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UserAcquisition.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UserAcquisition_Tests/Pods-UserAcquisition_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E1059FDC4EDF2DDF587C3648 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

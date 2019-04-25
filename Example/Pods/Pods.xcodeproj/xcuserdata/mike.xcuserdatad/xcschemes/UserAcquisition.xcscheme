@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E7B37F8AC19874B8BAB1CD2082129E1F"
+               BlueprintIdentifier = "F82B9C9BBC0ACB281E50DD70F6890AF3"
                BlueprintName = "UserAcquisition"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "UserAcquisition.framework">
+               BuildableName = "libUserAcquisition.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
