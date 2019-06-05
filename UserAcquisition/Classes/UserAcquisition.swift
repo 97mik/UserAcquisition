@@ -97,6 +97,7 @@ public class UserAcquisition: NSObject {
             "iap": iap,
             "country": product.priceLocale.regionCode ?? "",
             "extra": extra,
+            "api_key": APIKey
         ]
         var request = URLRequest(url: URL(string: "https://api.subr.app/v2/receipt")!)
         request.httpMethod = "POST"
