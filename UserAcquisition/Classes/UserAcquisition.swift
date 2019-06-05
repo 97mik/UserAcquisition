@@ -98,7 +98,7 @@ public class UserAcquisition: NSObject {
             "country": product.priceLocale.regionCode ?? "",
             "extra": extra,
         ]
-        var request = URLRequest(url: URL(string: "https://app-subscriptions.pocketmoon.me/api/receipt")!)
+        var request = URLRequest(url: URL(string: "https://api.subr.app/v2/receipt")!)
         request.httpMethod = "POST"
         request.httpBody = try! JSONSerialization.data(withJSONObject: params)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
