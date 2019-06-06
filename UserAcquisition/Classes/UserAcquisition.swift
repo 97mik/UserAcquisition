@@ -18,11 +18,9 @@ public class UserAcquisition: NSObject {
     public var conversionInfo = UserAcquisition.Info()
     
     private var APIKey = ""
-    private var appUserName = ""
 
-    public func configure(withAPIKey APIKey: String, appUserName: String) {
+    public func configure(withAPIKey APIKey: String) {
         self.APIKey = APIKey
-        self.appUserName = appUserName
     }
     
     public func logPurchase(of product: SKProduct) {

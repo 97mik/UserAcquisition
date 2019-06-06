@@ -23,7 +23,7 @@ pod 'UserAcquisition', :git => "https://github.com/97mik/UserAcquisition.git"
 ## Usage
 In didFinishLaunchingWithOptions method:
 ```swift
-UserAcquisition.shared.configure(withAPIKey: "APIKey", appUserName: "appUserName")
+UserAcquisition.shared.configure(withAPIKey: "APIKey")
 ```
 After successful purchase:
 ```swift
